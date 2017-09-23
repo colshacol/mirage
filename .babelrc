@@ -1,0 +1,37 @@
+{
+	"plugins": [
+		"transform-decorators-legacy",
+		"module:jsx-control-statements",
+		"react-html-attrs",
+		[
+			"flow-runtime",
+			{
+				"assert": true,
+				"annotate": true
+			}
+		],
+		[
+			"react-css-modules",
+			{
+				"context": "./source",
+				"generateScopedName": "[name]_[hash:base64:5]"
+			}
+		]
+	],
+
+	"presets": [
+		[
+			"env",
+			{
+				"targets": {
+					"browsers": [
+						"last 2 versions",
+						"safari >= 7"
+					]
+				}
+			}
+		],
+		"react",
+		"stage-0"
+	]
+}
