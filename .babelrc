@@ -1,5 +1,6 @@
 {
 	"plugins": [
+		"babel-plugin-transform-react-stateless-component-name",
 		"transform-decorators-legacy",
 		"module:jsx-control-statements",
 		"react-html-attrs",
